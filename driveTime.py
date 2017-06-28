@@ -15,9 +15,7 @@ driveTime = np.empty([len(postcodes), len(postcodes)])
 import urllib.request
 import json as simplejson
 
-count = 0
 for location1 in range(len(postcodes)):
-    count = count+1
     for location2 in range(location1+1, len(postcodes)):
         
         orig_lat = postcodes.iloc[location1][1]
